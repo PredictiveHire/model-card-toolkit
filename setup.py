@@ -20,14 +20,15 @@ from setuptools import setup
 REQUIRED_PACKAGES = [
     'absl-py>=0.9,<0.11',
     'semantic-version>=2.8.0,<3',
-    'jinja2>=2.10,<3',
+    'jinja2>=2.10,<3.2',
     'matplotlib>=3.2.0,<4',
     'jsonschema>=3.2.0,<4',
-    'tensorflow-data-validation>=0.26.0,<0.27.0',
-    'tensorflow-model-analysis>=0.26.0,<0.27.0',
-    'tensorflow-metadata>=0.26.0,<0.27.0',
-    'ml-metadata>=0.26.0,<0.27.0',
-    'dataclasses;python_version<"3.7"',
+    # 'tensorflow-data-validation>=0.26.0,<0.27.0',
+    # 'tensorflow-model-analysis>=0.26.0,<0.27.0',
+    # 'tensorflow-metadata>=0.26.0,<0.27.0',
+    # 'ml-metadata>=0.26.0,<0.27.0',
+    # 'dataclasses;python_version<"3.7"',
+    'dataclasses'
 ]
 
 # Get version from version module.

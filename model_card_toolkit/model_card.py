@@ -297,7 +297,8 @@ class ModelCard:
       training, and application.
   """
   schema_version: Optional[Text] = None
-  model_details: ModelDetails = dataclasses.field(default=ModelDetails())
+  model_details: ModelDetails = dataclasses.field(
+      default_factory=ModelDetails)
   model_parameters: ModelParameters = dataclasses.field(
       default_factory=ModelParameters)
   quantitative_analysis: QuantitativeAnalysis = dataclasses.field(

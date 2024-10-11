@@ -27,11 +27,11 @@ from absl import logging
 import jinja2
 
 from model_card_toolkit.model_card import ModelCard
-from model_card_toolkit.utils import graphics
-from model_card_toolkit.utils import tfx_util
+# from model_card_toolkit.utils import graphics
+# from model_card_toolkit.utils import tfx_util
 from model_card_toolkit.utils import validation
 
-import ml_metadata as mlmd
+# import ml_metadata as mlmd
 
 # Constants about provided UI templates.
 _UI_TEMPLATES = (
@@ -89,7 +89,7 @@ class ModelCardToolkit():
 
   def __init__(self,
                output_dir: Optional[Text] = None,
-               mlmd_store: Optional[mlmd.MetadataStore] = None,
+               mlmd_store: Optional = None,
                model_uri: Optional[Text] = None):
     """Initializes the ModelCardToolkit.
 
